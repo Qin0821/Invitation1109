@@ -13,10 +13,15 @@ def hello():
     return 'Nice to meet you!'
 
 
+@app.route('/cbg/')
+def cbg():
+    return render_template('cbg.html')
+
+
 @app.route('/sign/')
 @app.route('/sign/<name>')
 def sign(name=None):
-    return render_template('test.html', name=name)
+    return render_template('index.html', name=name)
 
 
 @app.route('/user/<username>')

@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>红纺文化20周年年会盛典</title>
+    <meta charset="UTF-8"/>
+    <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- <link href="https://cdn.bootcss.com/fullPage.js/3.0.7/fullpage.min.css" rel="stylesheet"> -->
+    <link
+            href="https://cdn.bootcss.com/Swiper/4.5.1/css/swiper.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="https://cdn.bootcss.com/jquery-confirm/3.3.4/jquery-confirm.min.css"
+            rel="stylesheet"
+    />
+    <link
+            href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css"
+            rel="stylesheet"
+    />
+    <style>
+        @font-face {
+            font-family: 'iconfont'; /* project id 1449699 */
+            src: url('http://at.alicdn.com/t/font_1449699_ndr14l18x3.eot');
+            src: url('http://at.alicdn.com/t/font_1449699_ndr14l18x3.eot?#iefix') format('embedded-opentype'),
+            url('http://at.alicdn.com/t/font_1449699_ndr14l18x3.woff2') format('woff2'),
+            url('http://at.alicdn.com/t/font_1449699_ndr14l18x3.woff') format('woff'),
+            url('http://at.alicdn.com/t/font_1449699_ndr14l18x3.ttf') format('truetype'),
+            url('http://at.alicdn.com/t/font_1449699_ndr14l18x3.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: 'iconfont' !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-touch-callout: none;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .page-view {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+
+        .page-view img {
+            width: 100%;
+        }
+
+        .page-1 {
+            background-image: url('https://upload-images.jianshu.io/upload_images/6895457-e7277572a5db209e.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+        }
+
+        .page-2 {
+            background-image: url('https://upload-images.jianshu.io/upload_images/6895457-3a5168b8269f8707.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+        }
+
+        .page-3 {
+            background-image: url('https://upload-images.jianshu.io/upload_images/6895457-6334ee04723dddf6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+        }
+
+        .page-4 {
+            background-image: url('https://upload-images.jianshu.io/upload_images/6895457-916a34714c68d614.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+        }
+
+        .page-5 {
+            background-image: url('https://upload-images.jianshu.io/upload_images/6895457-ceb2ecea6b487dd7.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+        }
+
+        [contenteditable='true'],
+        .swiper-container {
+            --swiper-navigation-color: #fff; /* 单独设置按钮颜色 */
+            --swiper-navigation-size: 30px; /* 设置按钮大小 */
+        }
+
+        .icon-up {
+            font-size: 35px;
+            position: absolute;
+            left: 50%;
+            margin-left: -17px;
+            color: #d9c9a5;
+            bottom: 10px;
+            animation: mymove 1.5s infinite;
+            -webkit-animation: mymove 1.5s infinite;
+            transition: all 0.2s ease;
+        }
+
+        @keyframes mymove {
+            0% {
+                bottom: 10px;
+                opacity: 0.5;
+            }
+            50% {
+                bottom: 18px;
+                opacity: 0.75;
+            }
+            100% {
+                bottom: 25px;
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes mymove {
+            0% {
+                bottom: 10px;
+                opacity: 0.5;
+            }
+            50% {
+                bottom: 18px;
+                opacity: 0.75;
+            }
+            100% {
+                bottom: 25px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="swiper-container" id="fullpage" style="height: 100%">
+    <div class="swiper-wrapper" style="height: 100%">
+        <div class="swiper-slide page-view page-1">
+            <i class="iconfont icon-up">&#xe63b;</i>
+        </div>
+
+        <div class="swiper-slide page-view page-2">
+            <i class="iconfont icon-up">&#xe63b;</i>
+        </div>
+
+        <div class="swiper-slide page-view page-3">
+            <i class="iconfont icon-up">&#xe63b;</i>
+        </div>
+
+        <div class="swiper-slide page-view page-4">
+            <i class="iconfont icon-up">&#xe63b;</i>
+        </div>
+
+        <div class="swiper-slide page-view page-5">
+        </div>
+    </div>
+</div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<!-- <script src="https://cdn.bootcss.com/fullPage.js/3.0.7/vendors/easings.min.js"></script> -->
+<!-- <script src="https://cdn.bootcss.com/fullPage.js/3.0.7/vendors/scrolloverflow.min.js"></script> -->
+<!-- <script src="https://cdn.bootcss.com/fullPage.js/3.0.7/fullpage.extensions.min.js"></script> -->
+<!-- <script src="https://cdn.bootcss.com/fullPage.js/3.0.7/fullpage.min.js"></script> -->
+<script src="https://cdn.bootcss.com/Swiper/4.5.1/js/swiper.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<script>
+    $(function () {
+        var img = document.createElement('img');
+        img.src = 'http://static.yudada.com/web/img/1.jpeg';
+        img.onload = function () {
+            init();
+        };
+        const $btn = $('.submit-btn');
+        const $select = $('#select-label');
+        const $rName = $('.representative-name');
+        $rName.hide();
+        $btn.hide();
+        // var myFullpage = new fullpage('#fullpage', {
+        //      autoScrolling: false,
+        //      scrollHorizontally: false,
+        //      fitToSectionDelay: 200,
+        //      scrollingSpeed: 200,
+        //      touchSensitivity: 3,
+        //      navigation: true,
+        //      navigationColor: '#fff'
+        // });
+        let mySwiper;
+
+        function init() {
+            let index = 0;
+            mySwiper = new Swiper('.swiper-container', {
+                autoplay: false,
+                direction: 'vertical',
+                effect: 'cube',
+                cubeEffect: {
+                    slideShadows: true,
+                    shadow: true,
+                    shadowOffset: 100,
+                    shadowScale: 0.6
+                },
+                on: {
+                    slideChangeTransitionStart: function () {
+                        if (index === this.activeIndex) {
+                            return;
+                        }
+
+                        $('.page-2,.page-3,.page-4').css('visible', 'visibility');
+
+
+                        $('.page-2')
+                            .find('.logo')
+                            .removeClass('fadeIn animated delay-1s')
+                            .addClass('fadeOut');
+                        $('.page-2')
+                            .find('.czyq')
+                            .removeClass('slideInDown  animated')
+                            .addClass('slideOutDown');
+                        $('.page-2')
+                            .find('.page2_c')
+                            .removeClass('slideInUp animated')
+                            .addClass('slideOutUp');
+
+                        $('.page-3')
+                            .find('.logo')
+                            .removeClass('fadeIn animated delay-1s')
+                            .addClass('fadeOut');
+                        $('.page-3')
+                            .find('.hdlc')
+                            .removeClass('slideInRight animated')
+                            .addClass('slideOutRight');
+                        $('.page-3')
+                            .find('.page3_c')
+                            .removeClass('slideInLeft  animated')
+                            .addClass('slideOutLeft');
+
+                        $('.page-4')
+                            .find('.logo')
+                            .removeClass('fadeIn animated delay-1s')
+                            .addClass('fadeOut');
+
+                        $('.page-4')
+                            .find('.sjdz')
+                            .removeClass('slideInDown  animated')
+                            .addClass('slideOutDown');
+                        $('.page-4')
+                            .find('.page4_c')
+                            .removeClass('slideInUp   animated')
+                            .addClass('slideOutUp');
+                    },
+                    slideChangeTransitionEnd: function () {
+                        if (index == this.activeIndex) {
+                            return;
+                        }
+                        index = this.activeIndex;
+                        $('.page-4>div').css('visible', 'visibility');
+
+                        if (this.activeIndex == 0) {
+                            $('.page-1>div').css('visible', 'hidden');
+                            $('.page-1>div').css('visible', 'visibility');
+                            setTimeout(function () {
+                                $('.page-1')
+                                    .find('.logo')
+                                    .removeClass('fadeOut')
+                                    .addClass('fadeIn animated delay-1s');
+                                $('.page-1')
+                                    .find('.title11')
+                                    .removeClass('zoomOut')
+                                    .addClass(' zoomIn  animated delay-1s');
+                                $('.page-1')
+                                    .find('.title12')
+                                    .removeClass('slideOutUp')
+                                    .addClass('slideInUp animated');
+                                $('.page-1')
+                                    .find('.title13')
+                                    .removeClass('slideOutDown')
+                                    .addClass('slideInDown animated');
+                                $('.page-1')
+                                    .find('.addtime')
+                                    .removeClass('slideOutUp')
+                                    .addClass('slideInUp animated');
+                                $('.page-1>div').css('visible', 'visibility');
+                            }, 0);
+                        } else if (this.activeIndex == 1) {
+                            $('.page-2>div').css('visible', 'hidden');
+
+                            setTimeout(function () {
+                                $('.page-2')
+                                    .find('.logo')
+                                    .removeClass('fadeOut')
+                                    .addClass('fadeIn animated delay-1s');
+                                $('.page-2')
+                                    .find('.czyq')
+                                    .removeClass('slideOutDown')
+                                    .addClass('slideInDown  animated');
+                                $('.page-2')
+                                    .find('.page2_c')
+                                    .removeClass('slideOutUp')
+                                    .addClass('slideInUp   animated');
+                                $('.page-2>div').css('visible', 'visibility');
+                            }, 0);
+                            // } else if (this.activeIndex == 2) {
+                            // 	$('.page-3>div').css('visible', 'hidden');
+
+                            // 	setTimeout(function() {
+                            // 		$('.page-3')
+                            // 			.find('.logo')
+                            // 			.removeClass('fadeOut')
+                            // 			.addClass('fadeIn animated delay-1s');
+                            // 		$('.page-3')
+                            // 			.find('.hdlc')
+                            // 			.removeClass('slideOutRight')
+                            // 			.addClass('slideInRight animated');
+                            // 		$('.page-3')
+                            // 			.find('.page3_c')
+                            // 			.removeClass('slideOutLeft')
+                            // 			.addClass('slideInLeft  animated');
+                            // 		$('.page-3>div').css('visible', 'visibility');
+                            // 	}, 0);
+                        } else if (this.activeIndex == 2) {
+                            $('.page-4>div').css('visible', 'hidden');
+
+                            setTimeout(function () {
+                                $('.page-4')
+                                    .find('.logo')
+                                    .removeClass('fadeOut')
+                                    .addClass('fadeIn animated delay-1s');
+                                $('.page-4')
+                                    .find('.sjdz')
+                                    .removeClass('slideOutDown')
+                                    .addClass('slideInDown  animated');
+                                $('.page-4')
+                                    .find('.page4_c')
+                                    .removeClass('slideOutUp')
+                                    .addClass('slideInUp   animated');
+                                $('.page-4>div').css('visible', 'visibility');
+                            }, 0);
+                        }
+                    }
+                }
+            });
+        }
+
+        //methods
+        // myFullpage.setAllowScrolling(false);
+        $select.change(function (v) {
+            var val = $select[0].value;
+            $rName[val == 3 ? 'show' : 'hide'](300);
+            mySwiper.slideTo(5);
+        });
+    });
+</script>
+</body>
+</html>
+
